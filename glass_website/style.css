@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main
+{
+    
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass
+{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 10px;
+    z-index: 3;
+    backdrop-filter: blur(0.3rem);
+    display:flex;
+    flex-direction: row;
+}
+.circle1 
+{
+    background:white;
+    background:linear-gradient(to right bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.3));
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    position:absolute;
+    top:4%;
+    right:15%;
+    z-index:2;
+
+}
+
+.circle2
+{
+    z-index: 2;
+    background:white;
+    background:linear-gradient(to right bottom,rgba(255,255,255,0.9),rgba(255,255,255,0.3));
+    height:15rem;
+    width:15rem;
+    border-radius: 50%;
+    position:absolute;
+    bottom:4%;
+    left:15%
+    
+}
+.dashboard{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+
+}
+.games{
+    flex-grow: 3;
+}
+.link{
+    display:flex;
+    flex-direction: row;
+    margin:4px;
+    padding:3px;
+    align-items: center;
+}
+.link h3
+{
+    padding:3px;
+    
+}
+.pro{
+    display:flex;
+    color:white;
+    padding:2rem;
+    background:linear-gradient(to right top,#65dfc9,#6cdbeb);
+    border-radius: 10px;
+    position:relative;
+    
+}
+.pro h3{
+    width:30%;
+    
+}
+.pro img{
+    position:absolute;
+    
+    top:0%;
+    right:10%;
+}
+h3{
+    color:#426696;
+    font-weight: 600;
+    font-size: 3 rem;
+    opacity: 0.8;
+}
+h1{
+    color:#658ec6;
+    font-weight: 500;
+    font-size: 3rem;
+    opacity: 0.8;
+
+
+}
+h2{
+    color:#426696;
+    font-weight: 600;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.status{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 8px;;
+}
+.status input{
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border:none;
+    border-radius: 3px;
+    width:130%;
+    padding: 4px;
+    margin-top: 8px;
+}
+.games{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .cards{
+        width:90%;
+        height:100%;
+        margin:8px;
+        padding:4px;
+        margin-top: 20px;
+    }
+.card{
+    display:flex;
+    flex-direction: row;
+    background:linear-gradient(to right bottom,rgba(255,255,255,1),rgba(255,255,255,0.5));
+    border-radius: 4px;
+    justify-content: space-evenly;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
+    margin:18px;
+    align-items: center;
+    padding:8px;
+    
+}
+.percentage{
+    color: #426696;
+}
+.card p
+{
+    color:#426696;
+
+}
+.progress
+{
+
+    background:linear-gradient(to right top,#65dfc9,#6cdbeb);
+    height:25%;
+    width:100%;
+    border-radius:1rem;
+    position:relative;
+}
+.progress::after
+{
+    content:"";
+    width:100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    position: absolute;
+    left: 60%;
+    border-radius: 1rem;
+}
